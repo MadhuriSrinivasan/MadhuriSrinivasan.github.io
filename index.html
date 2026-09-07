@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Madhuri Srinivasan</title>
+<meta name="description" content="Madhuri Srinivasan — Research Fellow in Neuroscience">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #F7F5F0;
+    --ink: #1A1D23;
+    --signal: #3D5A80;
+    --muted: #8B8680;
+    --hairline: #DDD8CE;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Newsreader', Georgia, serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12vh 24px 6vh;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation: none !important;
+      transition: none !important;
+    }
+  }
+
+  .wrap {
+    width: 100%;
+    max-width: 560px;
+  }
+
+  h1 {
+    margin-top: 1rem;
+    font-size: clamp(2.1rem, 5.5vw, 2.9rem);
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    line-height: 1.15;
+    margin-bottom: 0.6rem;
+  }
+
+  .role {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.8rem;
+    color: var(--signal);
+    letter-spacing: 0.02em;
+    margin-bottom: 2.6rem;
+  }
+
+  .bio {
+    font-size: 1.15rem;
+    line-height: 1.65;
+    color: var(--ink);
+    max-width: 46ch;
+    margin-bottom: 3rem;
+  }
+
+  .bio + .bio {
+    margin-top: -2.4rem;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid var(--hairline);
+  }
+
+  .links a {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 1.1rem 0;
+    border-bottom: 1px solid var(--hairline);
+    text-decoration: none;
+    color: var(--ink);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.95rem;
+    transition: color 0.15s ease, padding-left 0.15s ease;
+  }
+
+  .links a:hover,
+  .links a:focus-visible {
+    color: var(--signal);
+    padding-left: 6px;
+  }
+
+  .links a:focus-visible {
+    outline: 2px solid var(--signal);
+    outline-offset: 2px;
+  }
+
+  .links .dest {
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+
+  .links a:hover .dest,
+  .links a:focus-visible .dest {
+    color: var(--signal);
+  }
+
+  footer {
+    margin-top: 4rem;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.75rem;
+    color: var(--muted);
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Madhuri Srinivasan</h1>
+    <p class="role">research fellow — neuroscience</p>
+
+    <p class="bio">
+      random walker. neuroscience. i speak, write, and sing.
+    </p>
+
+    <nav class="links">
+      <a href="https://github.com/MadhuriSrinivasan" target="_blank" rel="noopener noreferrer">
+        <span>GitHub</span>
+        <span class="dest">github.com/MadhuriSrinivasan</span>
+      </a>
+      <a href="mailto:madhurisrinivasan@ncbs.res.in">
+        <span>Email</span>
+        <span class="dest">madhurisrinivasan@ncbs.res.in</span>
+      </a>
+    </nav>
+
+    <footer>Bengaluru, India</footer>
+  </div>
+</body>
+</html>
